@@ -1,0 +1,146 @@
+/* css resets starts here  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset ends here  */
+
+/* custom webpage starts here  */
+
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins',sans-serif;
+	font-size: 16px;
+	line-height: 1.7;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+}
+::placeholder{
+	font-family: 'Poppins',sans-serif;
+	font-weight: 500;
+}
+
+#form-container{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient( to right ,rgba(254,121,120,0.7),rgba(255,121,120,0.7)), url("../bg-intro-desktop.png") no-repeat;
+	background-size:cover;
+	padding: 6% 13%;
+
+}
+
+#form-container .trial-page-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#form-container .trial-page-container .trial-content{
+	width: 40%;
+	height: 200px;
+
+}
+#form-container .trial-page-container .trial-content h1{
+	font-size: 50px;
+	font-weight: 600;
+	color:#fff;
+	line-height: 50px;
+}
+#form-container .trial-page-container .trial-content p{
+	color: #fff;
+	margin: 24px 0;
+}
+#form-container .trial-page-container .trial-form-container{
+	width: 42%;
+
+}
+#form-container .trial-page-container .trial-form-container .free-trial{
+	padding: 12px 0 ;
+	background: #5D54A3;
+	border-radius: 6px;
+	text-align: center;
+	margin:  0 0 20px 0;
+	box-shadow:  0 5px 0 2px  rgba(0,0,0,0.1);
+}
+
+#form-container .trial-page-container .trial-form-container .free-trial span{
+	color: #c1c1c1;
+}
+#form-container .trial-page-container .trial-form-container .trial-form{
+	width: 100%;
+	border-radius: 6px;
+	background: #fff;
+	box-shadow:  0 5px 0 2px  rgba(0,0,0,0.1);
+}
+#form-container .trial-page-container .trial-form-container  form{
+	padding: 30px;
+}
+#form-container .trial-page-container .trial-form-container  form input{
+	padding: 12px;
+	width: 100%;
+	outline: none;
+	margin: 0 0 24px 0;
+	border-radius: 3px;
+	border: none;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2),-1px -1px 2px rgba(0,0,0,0.2);
+}
+#form-container .trial-page-container .trial-form-container  form .form-btn{
+	background: #37CC8A;
+	color: #fff;
+	font-family: 'Poppins',sans-serif;
+	font-weight: 600;
+}
+
+#form-container .trial-page-container .trial-form-container  form .form-terms-condition a{
+	color: grey;
+	font-size: 13px;
+}
+#form-container .trial-page-container .trial-form-container  form .form-terms-condition span{
+	color: #FFAAA9;
+}

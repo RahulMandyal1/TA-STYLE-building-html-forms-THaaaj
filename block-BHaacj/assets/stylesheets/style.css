@@ -1,0 +1,494 @@
+/* css reset starts here  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset ends here  */
+
+/* custom style starts here  */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size:16px;
+    line-height:1.7;
+    font-family:'Roboto' ,sans-serif;
+    background: rgb(230,230,230);
+    color: #fff;
+}
+body p{
+    color: grey;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color:#000;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow:row wrap;
+}
+.middel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row wrap;
+}
+.column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow:column wrap;
+}
+
+::placeholder{
+    font-family:'Roboto' ,sans-serif;
+}
+.btn{
+    padding: 8px 24px;
+    background: #69C6BA;
+    color: #fff;
+}
+#navigation-bar{
+    width: 100%;
+    padding: 24px 14%;
+    background: #fff;
+    
+}
+#navigation-bar .logo a{
+    font-size:25px;
+    font-weight: 700;
+}
+#navigation-bar nav ul{
+    margin:  0 100px;
+}
+#navigation-bar nav ul li{
+    margin:  0 24px 0 0;
+}
+#navigation-bar nav ul li a{
+    font-weight: 700;
+}
+#navigation-bar nav ul li a:hover{
+    color: #69C69A;
+}
+#navigation-bar nav ul li  .active-webpage{
+    color: #69C69A;
+}
+/* Navigation bar ends here   */
+
+/* Home section starts here  */
+
+main{
+    width: 100%;
+    padding: 0 14%;
+    
+}
+section{
+    width: 100%;
+    /* box-shadow: 4px 0 20px  rgba(0,0,0,0.2),-4px 0 8px  rgba(0,0,0,0.2); */
+  
+}
+
+#home .home-container{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url('../banner.jpg');
+    background-size:cover;
+    object-fit: cover;
+    padding: 4% 0;
+}
+#home .home-container .welcome-text{
+    width: 400px;
+    /* background: blue; */
+    justify-content: center;
+    
+  
+}
+#home .home-container .welcome-text h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+#home .home-container .welcome-text .dots-container{
+    margin: 24px 0;
+}
+
+#home .home-container .welcome-text h2{
+    font-size: 20px;
+    word-spacing:5px;
+}
+
+#home .home-container .welcome-text .welcome-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #69C69A;
+    margin: 24px 0 0 0;
+}
+#home .home-container .welcome-text .welcome-btn i{
+    color: #fff;
+}
+
+#home .home-container .book-destination{
+    width: 760px;
+    height: 200px;
+    background:#fff;
+    
+}
+
+#home .home-container .book-destination .trip-detail{
+    width: 50%;
+    height: 100%;
+   
+}
+#home .home-container .book-destination .trip-checkout{
+    width: 48%;
+    height: 100%;
+    
+}
+#home .home-container .book-destination label{
+    font-weight: 700;
+    color: #000;
+    font-size: 13px;
+}
+ .inputbox{
+    display: block;
+    border: none;
+    outline: none;
+    padding:8px;
+    box-sizing: border-box;
+    margin:0 0 20px 0;
+    font-size: 13px;
+}
+#home .home-container .book-destination .trip-dates{
+    display: flex;
+    justify-content: space-between;
+}
+#home .home-container .book-destination trip-checkout{
+    padding: 10px;
+}
+#home .home-container .book-destination .user-detail{
+    width: 100%;
+    height: 50%;
+    
+}
+.book-destination .user-detail .user-detail-1{
+    width: 40%;
+    height: 100%;
+    
+  
+}
+ .book-destination .trip-checkout .user-detail .inputbox{
+     width: 100%;
+     padding: 10px 10px;
+}
+ .book-destination .user-detail .user-detail-2{
+    width: 30%;
+    height: 100%;
+  
+}
+.book-destination .user-detail .user-detail-3{
+    width: 30%;
+    height: 100%;
+   
+}
+.book-destination  .trip-checkout .checkout-btn 
+{
+    width: 100%;
+}
+.book-destination .trip-checkout .checkout-btn a{
+    width: 100%;
+    text-align: center;
+}
+#home .home-container .book-destination  fieldset{
+    padding: 20px;
+}
+
+
+/* Home ends here   */
+#Explore-text-container{
+    background:rgb(239,239,239) ;
+    padding: 2% 10%;
+}
+
+.Explore-text{
+    text-align: center;
+    color: #000;
+}
+ .Explore-text h2{
+    font-size: 35px;
+    margin: 0 0 16px 0;
+    color: #000;
+}
+.Explore-text h2 span{
+    font-weight: 600;
+}
+.Explore-text p{
+    margin: 0 0 16px 0;
+}
+
+
+/* Explore section ends here  */
+
+/* Destination section start  here  */
+#Top-destination {
+    background: #fff;
+  
+}
+#Top-destination .destination-container {
+    width: 100%;
+    height: 350px ;
+    position: relative;
+    
+}
+#Top-destination .destination-container .blank-container{
+    width: 50%;
+}
+#Top-destination .destination-container .destination-image{
+    width: 50%;
+    height: 100%;
+   
+}
+#Top-destination .destination-container .destination-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#Top-destination .destination-container .carousel-container{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+#Top-destination .destination-container .carousel-container .carousel{
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+#Top-destination .destination-container .destination-content{
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    background:#69C6BA;
+    top: 100px;
+    left:500px;
+    padding: 20PX;
+    color: #fff;
+}
+#Top-destination .destination-container .destination-content p{
+    color: #fff;
+    font-size: 12px;
+}
+#Top-destination .destination-container .destination-content a{
+    background: #fff;
+    color: #69C6BA;
+    margin: 16px 0;
+    font-size: 13px;
+}
+
+.sub-heading{
+    font-size: 24px;
+}
+
+#Top-destination .destination-container .right-side-content{
+    top: 100px;
+    left:50px;
+    background: rgb(198,105, 149);
+}
+
+#Top-destination .destination-container .right-side-carousel{
+    top: 200px;
+    left: 598px;
+}
+#Top-destination .destination-container .right-side-content a{
+    color: rgb(198,105, 149);
+}
+
+/* Destination section ends here   */
+/* custom style ends here  */
+
+/* Continent section starts here  */
+#continents-section {
+
+    width: 100%;
+    height: 150px;
+    background:#69C6BA;
+}
+#continents-section .continent-container{
+    text-align: center;
+    height: 100%;
+    padding: 10px 20px;
+}
+#continents-section .continent-container:hover{
+    background: rgb(198,105, 149);
+}
+#continents-section .asia{
+    background: rgb(198,105, 149);
+}
+/* Continent section ends  here  */
+
+
+/* paid artilce starts here  */
+#paid-articles{
+  
+    background: #fff;
+    padding: 3% 10%;
+}
+#paid-articles .paid-article-container article{
+    width: 100%;
+    height: 180px;
+    background: #fff;
+    margin: 0 0 20px 0;
+}
+#paid-articles .paid-article-container article .article-image{
+    width: 30%;
+    height: 100%;
+  
+}
+#paid-articles .paid-article-container article .article-image img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+#paid-articles .paid-article-container article .article-content{
+    width: 50%;
+    height: 100%;
+    background: #fff;
+   padding: 10px;
+   
+}
+#paid-articles .paid-article-container article .article-content .article-title{
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+article .article-content .article-category{
+    color: rgb(198,105, 149);
+    font-size: 13px;
+    margin: 16px 0;
+}
+#paid-articles .paid-article-container article .article-btn{
+    width: 20%;
+    height: 100%;
+    background: #69C6BA;
+    color: #fff;
+    justify-content: flex-start;
+    
+}
+#paid-articles .paid-article-container article .article-btn .btn-text{
+    padding:  0 0 0 20px;
+}
+#paid-articles .paid-article-container article .article-btn h5{
+    font-size:40px;
+}
+
+
+#paid-articles .paid-article-container article .article-btn a{
+    font-size: 12px;
+    color: #fff;
+    
+}
+#paid-articles .paid-article-container .show-more-articles{
+    margin:  50px 0;
+}
+
+
+/* paid artilces ends here  */
+
+/* Contact section starts here  */
+#contact-section{
+    height: 100vh;
+ 
+
+}
+#contact-section .map-form-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#contact-section .map-form-container iframe{
+    width: 100%;
+    height: 100%;
+   
+}
+.map-form-container form{
+    width: 400px;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    background: #fff;
+    padding: 20px;
+    box-shadow:3px 3px 6px rgba(0,0,0,0.2);
+   
+}
+.map-form-container form .inputbox{
+    padding: 12px 8px ;
+    outline: none;
+    background: #f5f5f5;
+}
+.map-form-container form .input-full-width{
+    width: 100%;
+}
+.map-form-container form .btn{
+    text-align: center;
+    width: 100%;
+    
+}
+/* Contact section ends  here  */
+
+/* Footer section starts here  */
+footer{
+    width: 100%;
+    padding: 0px 14%;
+}
+footer .footer-container{
+    text-align: center;
+    background: #69C6BA;
+    padding: 24px 0;
+}
+/* Footer section ends here  */
